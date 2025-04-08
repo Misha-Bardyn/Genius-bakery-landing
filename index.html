@@ -123,15 +123,21 @@
         <div class="container">
           <h2 class="formats-title section-title centered">Формати</h2>
           <div class="formats-container">
-            <button class="carosel-button" type="button">
+            <!-- <button class="carosel-button" type="button">
               <svg width="16" height="16">
                 <use href=""></use>
               </svg>
+            </button> -->
+            <button class="carousel-button" type="button" >
+              <!-- <svg id="icon" width="16" height="16">
+                <use href="./images/Arrow_1.svg#icon"></use>
+              </svg> -->
+              <img src="./images/Arrow.png" alt="">
             </button>
-
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-cart">
+                  <img class="format-cart__img" src="./images/Welrus.png" alt="">
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -146,6 +152,7 @@
               </li>
               <li lass="formats-item">
                 <article class="format-cart">
+                  <img class="format-cart__img" src="./images/Horseshoe.png" alt="">
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -160,6 +167,7 @@
               </li>
               <li lass="formats-item">
                 <article class="format-cart">
+                  <img class="format-cart__img scope" src="./images/Handlebar.png" alt="">
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -173,10 +181,11 @@
                 </article>
               </li>
             </ul>
-            <button class="carosel-button" type="button">
-              <svg width="16" height="16">
-                <use href=""></use>
-              </svg>
+            <button class="carousel-button" type="button" >
+              <!-- <svg id="icon" width="16" height="16">
+                <use href="./images/Arrow_1.svg#icon"></use>
+              </svg> -->
+              <img src="./images/Arrow.png" alt="">
             </button>
           </div>
         </div>
@@ -190,7 +199,7 @@
               </h2>
 
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <form name="contact-form"  >
+              <form name="contact-form">
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name"
                     >Ім'я</label
@@ -230,12 +239,16 @@
                     required
                   />
                 </div>
-      
-                <button class="form-btn btn" type="submit">Замовити дзвінок</button>
-                <p class="form-terms"
-                  >Натискаючи на кнопку я погогоджуюсь з
-                  <a class="form-terms-link" href="#">політикою конфіденційності</a></p
-                >
+
+                <button class="form-btn btn" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погогоджуюсь з
+                  <a class="form-terms-link" href="#"
+                    >політикою конфіденційності</a
+                  >
+                </p>
               </form>
             </div>
             <iframe
@@ -300,10 +313,12 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">
+          <img src="./images/Group.png" alt="">
+        </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" >
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ім'я</label
@@ -345,10 +360,10 @@
           </div>
 
           <button class="form-btn btn" type="submit">Замовити дзвінок</button>
-          <p class="form-terms"
-            >Натискаючи на кнопку я погогоджуюсь з
-            <a class="form-terms-link" href="#">політикою конфіденційності</a></p
-          >
+          <p class="form-terms">
+            Натискаючи на кнопку я погогоджуюсь з
+            <a class="form-terms-link" href="#">політикою конфіденційності</a>
+          </p>
         </form>
       </div>
     </div>

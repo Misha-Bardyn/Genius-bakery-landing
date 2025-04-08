@@ -238,11 +238,13 @@ ul {
   gap: 30px;
 }
 .chef-foto {
-  /* width: 241px; */
+  max-width: 265px;
+  height: 390px;
   background-size: auto;
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-secondary-dark);
+    object-fit: cover;
 }
 .chef-title {
   margin-bottom: 16px;
@@ -272,7 +274,13 @@ ul {
 .formats-item {
   flex-basis: calc((100%-40px) / 3);
 }
+
 .format-cart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* width: 349px; */
   height: 444px;
   padding: 24px;
   background-image: linear-gradient(
@@ -281,9 +289,23 @@ ul {
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
-  border: 1px solid lightblue;
   border-radius: 16px;
+  color: var(--color-primary-light);
 }
+.format-cart:hover {
+  transition: 0.7s ease-in-out;
+  transform: scale(1.05);
+}
+
+.format-cart__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -294,6 +316,7 @@ ul {
 .format-text {
   font-size: 14px;
   font-weight: 300;
+  width: 301px;
 }
 
 /* Carousel */
@@ -310,11 +333,17 @@ ul {
   border-radius: 50%;
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
+  font: inherit;
 }
-
+.carousel-button:first-child{
+  rotate:180deg ;
+}
+.carousel-button:hover img {
+  /* background-color: var(--color-primary-dark); */
+  filter: brightness(0) invert(1);
+}
 .carousel-button:hover {
   background-color: var(--color-primary-dark);
-  fill: var(--color-primary-light);
 }
 /* Contact section  */
 .contact-section {
@@ -427,6 +456,12 @@ ul {
   position: absolute;
   top: 40px;
   right: 40px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /* Form */
