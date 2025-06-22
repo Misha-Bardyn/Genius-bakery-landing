@@ -6,3 +6,7 @@ const toggleModal = () => modal.classList.toggle('is-hidden');
 
 modalBtnOpen.addEventListener('click', toggleModal);
 modalBtnClose.addEventListener('click', toggleModal)
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) toggleModal();
+  });
